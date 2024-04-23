@@ -32,7 +32,7 @@
   },
   "bundleDependencies": [],
   "dependencies": {
-    "formidable": "^2.1.1"
+    "formidable": "^3.2.4"
   },
   "deprecated": false,
   "description": "A light-weight module that brings window.fetch to node.js",
