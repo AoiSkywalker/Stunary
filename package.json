@@ -32,7 +32,11 @@
   },
   "bundleDependencies": [],
   "dependencies": {
-    "formidable": "^2.1.1"
+    "express": "^4.19.2",
+    "formidable": "^2.1.1",
+    "netlify-cli": "^17.23.8",
+    "netlify-lambda": "^2.0.16",
+    "serverless-http": "^3.2.0"
   },
   "deprecated": false,
   "description": "A light-weight module that brings window.fetch to node.js",
@@ -88,7 +92,7 @@
     "url": "git+https://github.com/bitinn/node-fetch.git"
   },
   "scripts": {
-    "build": "cross-env BABEL_ENV=rollup rollup -c",
+    "build": "netlify deploy --prod",
     "coverage": "cross-env BABEL_ENV=coverage nyc --reporter json --reporter text mocha -R spec test/test.js && codecov -f coverage/coverage-final.json",
     "prepare": "npm run build",
     "report": "cross-env BABEL_ENV=coverage nyc --reporter lcov --reporter text mocha -R spec test/test.js",
@@ -96,3 +100,4 @@
   },
   "version": "2.6.0"
 }
+

@@ -88,3 +88,6 @@ http
   .listen(8080, host, () => {
     console.log(`Server is running on http://${host}:${port}`);
   });
+
+
+// "build": "cross-env BABEL_ENV=rollup rollup -c", originally in package.json script build
